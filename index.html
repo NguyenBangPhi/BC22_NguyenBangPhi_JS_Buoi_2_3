@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        Login
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <input id="txtUsername" class="form-control" type="text" placeholder="Username" value="Cybersoft"/>
+                        </div>
+                        <div class="form-group">
+                            <input id="txtPassword" class="form-control" type="password" placeholder="Password" value="CyberPass"/>
+                        </div>
+                        <button id="btnLogin" class="btn btn-success">Login</button>
+                    </div>
+                    <div id="footerLogin" class="card-footer text-muted">
+                        Footer
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <hr/>
+
+    <input type="text" placeholder="Number 1" id="txtNumber_1"/>
+    <input type="text" placeholder="Number 2" id="txtNumber_2"/>
+    <button id="btnCong" class="btn btn-success">Cộng</button>
+    <div id="thongBao" class="demo"></div>
+
+    <hr/>
+
+    <button class="btn btn-light" id="btnOff">Off</button>
+    <img src="./images/pic_bulboff.gif" alt="" id="imgPic">
+    <button class="btn btn-warning" id="btnOn">On</button>
+    <button id="btnDisableBtnOn" class="btn btn-info">Disable button On</button>
+    <button id="enableBtnOn" class="btn btn-success">Enable button On</button>
+
+
+    <hr/>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        Tính tiền típ
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                          <label for="">Tổng tiền thanh toán?</label>
+                          <input id="txtTongTien" type="text" class="form-control" >
+                          
+                        </div>
+                        <div class="form-group">
+                          <label for="">Bạn muốn típ bao nhiêu?</label>
+                          <select id="phanTramTip" class="form-control" >
+                            <option value="10">10%</option>
+                            <option value="20">20%</option>
+                            <option value="30">30%</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="">Muốn chia sẻ bao nhiêu người trong group?</label>
+                          <input id="soNguoi"  type="text" class="form-control" >
+                        </div>
+                        <button id="btnTinh" class="btn btn-danger">Tính</button>
+                    </div>
+                    <div id="footerTienTip" class="card-footer text-muted">
+                        Footer
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="divContent">
+
+    </div>
+    <button id="btnCreateP" class="btn btn-info">Tạo thẻ p</button>
+
+    <hr/>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        Tính lợi nhuận
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="">Tên phim?</label>
+                            <input id="txtTenPhim" type="text" class="form-control">
+                        
+                        </div>
+                        <div class="form-group">
+                            <label for="">Nhập giá vé người lớn</label>
+                            <input id="txtVeNguoiLon" type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Nhập giá vé trẻ em</label>
+                            <input id="txtVeTreEm" type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Số lượng vé người lớn</label>
+                            <input id="txtSoLuongNguoiLon" type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Số lượng vé trẻ em</label>
+                            <input id="txtSoLuongTreEm" type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Phần trăm từ thiện?</label>
+                            <select id="phanTramTuThien" class="form-control" >
+                              <option value="10">10%</option>
+                              <option value="20">20%</option>
+                              <option value="30">30%</option>
+                            </select>
+                          </div>
+                        <button id="btnTinhTuThien" class="btn btn-danger">Tính</button>
+                    </div>
+                    <div id="footerTuThien" class="card-footer text-muted">
+                        Footer
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <hr/>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        Tính lương nhân viên
+                    </div>
+                    <div class="card-body">
+                        
+                        <div class="form-group">
+                            <label for="">Nhập số ngày làm</label>
+                            <input id="txtSoNgayLam" type="text" class="form-control">
+                        </div>
+                        
+                        <button id="btnTinhLuongNV" class="btn btn-danger">Tính</button>
+                    </div>
+                    <div id="footerTinhLuongNV" class="card-footer text-muted">
+                        Footer
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr/>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        Tính giá trị trung bình
+                    </div>
+                    <div class="card-body">
+    
+                        <div class="form-group">
+                            <label for="">Nhập số thứ nhất</label>
+                            <input id="txtSoThuNhat" type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Nhập số thứ hai</label>
+                            <input id="txtSoThuHai" type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Nhập số thứ ba</label>
+                            <input id="txtSoThuBa" type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Nhập số thứ tư</label>
+                            <input id="txtSoThuTu" type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Nhập số thứ năm</label>
+                            <input id="txtSoThuNam" type="text" class="form-control">
+                        </div>
+    
+                        <button id="btnTinhTB" class="btn btn-danger">Tính</button>
+                    </div>
+                    <div id="footerTinhTB" class="card-footer text-muted">
+                        Footer
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr/>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        Tính giá trị trung bình
+                    </div>
+                    <div class="card-body">
+    
+                        <div class="form-group">
+                            <label for="">Nhập số USD</label>
+                            <input id="txtSoUSD" type="text" class="form-control">
+                        </div>
+                        
+    
+                        <button id="btnTinhUSD" class="btn btn-danger">Tính</button>
+                    </div>
+                    <div id="footerTinhUSD" class="card-footer text-muted">
+                        Footer
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr/>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        Tính hình chữ nhật
+                    </div>
+                    <div class="card-body">
+    
+                        <div class="form-group">
+                            <label for="">Nhập chiều dài</label>
+                            <input id="txtChieuDai" type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Nhập chiều rộng</label>
+                            <input id="txtChieuRong" type="text" class="form-control">
+                        </div>
+                        
+    
+                        <button id="btnTinhHCN" class="btn btn-danger">Tính</button>
+                    </div>
+                    <div id="footerTinhHCN" class="card-footer text-muted">
+                        Footer
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr/>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        Tính tổng 2 ký số
+                    </div>
+                    <div class="card-body">
+    
+                        <div class="form-group">
+                            <label for="">Nhập 1 số có 2 chữ số</label>
+                            <input id="txtKySo" type="text" class="form-control">
+                        </div>
+                        
+                        
+    
+                        <button id="btnTinhKySo" class="btn btn-danger">Tính</button>
+                    </div>
+                    <div id="footerTinhKySo" class="card-footer text-muted">
+                        Footer
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
